@@ -1,10 +1,24 @@
 import React from 'react'
+import {Navbar, Nav, Container} from 'react-bootstrap'
 
 const Header = () => {
     return (
-        <div>
-            
-        </div>
+        <header>
+            <Navbar bg="dark" variant="dark" expand="lg" collapseOnSelect>
+                <Container>
+  <Navbar.Brand href="/">proshop</Navbar.Brand>
+  <Navbar.Toggle aria-controls="basic-navbar-nav" />
+  <Navbar.Collapse id="basic-navbar-nav">
+    <Nav className="ml-auto">
+      <Nav.Link href="/cart">cart</Nav.Link>
+      <Nav.Link href="/login">sign in</Nav.Link>
+      
+    </Nav>
+    
+  </Navbar.Collapse>
+  </Container>
+</Navbar>
+        </header>
     )
 }
 
