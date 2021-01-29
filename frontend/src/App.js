@@ -11,7 +11,7 @@ const App = () => {
     <Header/>
     <main className="py-3">
     <Container>
-    <h2>pro shop</h2>
+    <HomeScreen/>
     </Container>
       
     
