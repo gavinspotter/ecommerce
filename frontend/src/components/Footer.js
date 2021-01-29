@@ -1,11 +1,17 @@
 import React from 'react'
-import {Container} from "react-bootstrap"
+import {Container, Row, Col} from "react-bootstrap"
 
 const Footer = () => {
     return (
-        <div>
-            
-        </div>
+       <footer>
+           <Container>
+               <Row>
+                   <Col className='text-center py-3'>
+                       copyright &copy; propshop
+                   </Col>
+               </Row>
+           </Container>
+       </footer>
     )
 }
 
