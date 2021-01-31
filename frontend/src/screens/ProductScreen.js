@@ -1,4 +1,5 @@
 import React from 'react'
+import { Col, Image, Row } from 'react-bootstrap'
 import { Link } from "react-router-dom"
 import Rating from "../components/Rating"
 import products from "../products"
@@ -9,9 +10,19 @@ const ProductScreen = ({ match }) => {
     const product = products.find(p => p._id === match.params.id)
 
     return (
-        <div>
-            {product.name}
-        </div>
+        <>
+            <Link className="btn btn-light my-3" to="/">
+                go back
+        </Link>
+            <Row>
+                <Col md={6}>
+                    <Image src={product.image} alt={product.name} fluid />
+                </Col>
+                <Col md={3}>
+
+                </Col>
+            </Row>
+        </>
     )
 }
 
