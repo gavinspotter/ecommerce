@@ -1,6 +1,7 @@
 import React from 'react'
 import { Col, Image, ListGroup, Row } from 'react-bootstrap'
 import { Link } from "react-router-dom"
+import Product from '../components/Product'
 import Rating from "../components/Rating"
 import products from "../products"
 
@@ -22,6 +23,9 @@ const ProductScreen = ({ match }) => {
                     <ListGroup variant='flush'>
                         <ListGroup.Item>
                             <h3>{product.name}</h3>
+                        </ListGroup.Item>
+                        <ListGroup.Item>
+                            <Rating value={product.rating} text={`${product.numReviews} reviews`} />
                         </ListGroup.Item>
                     </ListGroup>
                 </Col>
