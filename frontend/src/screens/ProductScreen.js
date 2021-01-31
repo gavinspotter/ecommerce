@@ -1,5 +1,5 @@
 import React from 'react'
-import { Col, Image, Row } from 'react-bootstrap'
+import { Col, Image, ListGroup, Row } from 'react-bootstrap'
 import { Link } from "react-router-dom"
 import Rating from "../components/Rating"
 import products from "../products"
@@ -19,7 +19,11 @@ const ProductScreen = ({ match }) => {
                     <Image src={product.image} alt={product.name} fluid />
                 </Col>
                 <Col md={3}>
-
+                    <ListGroup variant='flush'>
+                        <ListGroup.Item>
+                            <h3>{product.name}</h3>
+                        </ListGroup.Item>
+                    </ListGroup>
                 </Col>
             </Row>
         </>
