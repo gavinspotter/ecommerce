@@ -2,6 +2,8 @@ const express = require("express")
 const dotenv = require("dotenv")
 const products = require("./data/products")
 
+dotenv.config()
+
 const app = express()
 
 app.get('/', (req, res) => {
