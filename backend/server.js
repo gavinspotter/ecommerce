@@ -1,4 +1,5 @@
 const express = require("express")
+const dotenv = require("dotenv")
 const products = require("./data/products")
 
 const app = express()
