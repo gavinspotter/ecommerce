@@ -1,4 +1,5 @@
 import mongoose from 'mongoose'
+import User from './userModel'
 
 const reviewSchema = mongoose.Schema({
     name: {type: String, required: true},
@@ -63,3 +64,5 @@ const productSchema = mongoose.Schema({
 })
 
 const Product = mongoose.model("Product", productSchema)
+
+export default User
